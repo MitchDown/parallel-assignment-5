@@ -1,6 +1,18 @@
+/**
+ * @author Mitchel Downey
+ * @file HeatSub.java
+ *
+ * CPSC 4600, Seattle University
+ */
+
 import java.util.concurrent.*;
 import java.lang.Math.*;
 
+/**
+ * The HeatSub class is a subclass of a GeneralScanReduce object, with the E element being a 2D array of doubles
+ * representing all [x,y] observations for a given timestamp. The T element is a [DIM][DIM] array representing
+ * the grid of observation 'hits' for a given timestamp
+ */
 public class HeatSub extends GeneralScanReduce<Double[][], Double[][]>
 {
 	public HeatSub(Double[][][] data, int DIM)
@@ -53,6 +65,11 @@ public class HeatSub extends GeneralScanReduce<Double[][], Double[][]>
 
 	private int DIM;
 
+	/**
+	 * Gets the array coordinates of a given value in (-1.0,1.0)
+	 * @param value 	The position to be determined
+	 * @return 			The array location the value should be mapped to
+	 */
 	private int getLoc(Double value)
 	{
 		double step = 2.0 / DIM;

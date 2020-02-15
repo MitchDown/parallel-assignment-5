@@ -1,9 +1,8 @@
-/*
- * Mit
+/**
+ * @author Mitchel Downey
+ * @file HeatMapDriver.java
  *
- *
- * CPSC 5600, Seattle University
-
+ * CPSC 4600, Seattle University
  */
 
 import java.awt.BorderLayout;
@@ -17,6 +16,11 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 
+/**
+ * The HeatMapDriver is a driver class for displaying the 'heat map' of Observations from observation_test.dat.
+ * It utilises the ColoredGrid and Observation classes written by Prof. Kevin Lundeen at Seattle University, and the
+ * GeneralScanReduce and HeatSub classes written by Mitchel Downey
+ */
 public class HeatMapDriver {
 	private static final int DIM = 150;
 	private static final String REPLAY = "Replay";

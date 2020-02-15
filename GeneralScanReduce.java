@@ -1,3 +1,10 @@
+/**
+ * @author Mitchel Downey
+ * @file GeneralScanReduce.java
+ *
+ * CPSC 4600, Seattle University
+ */
+
 
 import java.util.concurrent.*;
 import java.lang.Math.*;
